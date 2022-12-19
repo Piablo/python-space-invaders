@@ -41,4 +41,4 @@ class Player(pygame.sprite.Sprite):
         if self.rect.right >= self.max_x_constraint:
             self.rect.right = self.max_x_constraint
     def shoot_laser(self):
-        self.lasers.add(Laser(self.rect.center, -8))
+        self.lasers.add(Laser(self.rect.center, -8, self.rect.bottom))
